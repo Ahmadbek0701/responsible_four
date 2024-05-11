@@ -1,0 +1,50 @@
+.container {
+    margin: 0 auto;
+}
+.cards {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat( 4, 1fr);
+}
+.img {
+    width: 100%;
+}
+.card {
+    width: 300px;
+    height: 430px;
+    background-color: lightblue ;
+    border: 5px dashed yellowgreen;
+}
+.learn {
+    color: orange;
+    margin-left: 15px;
+}
+.btn {
+    background-color: lightseagreen;
+    width: max-content;
+    height: fit-content;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+.lorem {
+    margin-left: 15px;
+}
+@media (max-width:750px) {
+    .card {
+        background-color: aquamarine;
+        border: 5px dashed skyblue;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+@media (max-width: 400px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .card {
+        background-color: rebeccapurple;
+    }
+}
